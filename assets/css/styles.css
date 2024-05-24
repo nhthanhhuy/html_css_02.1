@@ -1,0 +1,701 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Common */
+
+.main-content {
+    width: 1170px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    font-family: "Poppins", sans-serif;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.heading {
+    color: #0d1111;
+    font-weight: 700;
+}
+
+.heading.lv1 {
+    font-size: 6.2rem;
+    line-height: 1.161;
+}
+
+.heading.lv2 {
+    font-size: 4.2rem;
+    line-height: 1.333;
+}
+
+/* Header */
+
+.header {
+    position: sticky;
+    top: -42px;
+    z-index: 1;
+    background-color: #fcfcfc;
+}
+
+.header .content {
+    display: flex;
+    align-items: center;
+    padding: 52px 0 8px;
+    color: #fff;
+}
+
+.header .menu {
+    display: flex;
+    align-items: center;
+    gap: 39px;
+    margin-left: 235px;
+}
+
+.header .menu a {
+    color: #2f3a3b;
+    font-size: 1.6rem;
+}
+
+.header .menu a:hover {
+    text-shadow: 1px 1px 2px rgba(47, 58, 59, 1);
+}
+
+.header .login {
+    margin-left: auto;
+}
+
+.header .login .btn {
+    color: #494949;
+    font-size: 1.6rem;
+}
+
+.header .login .btn-sign-in {
+    margin-right: 24px;
+    padding: 8px;
+}
+
+.header .login .btn-sign-up {
+    padding: 12px 24px;
+    color: #1ebfc1;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border: 1px solid #1ebfc1;
+    border-radius: 6px;
+}
+
+/* Main */
+
+.home {
+    padding: 42px 0 79px;
+}
+
+.home .hero {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home .info {
+    width: 88%;
+}
+
+.home .info .note {
+    margin-top: 93px;
+    color: #767e7e;
+    font-size: 1.4rem;
+}
+
+.home .info .heading {
+    margin-top: 18px;
+}
+
+.home .info .desc {
+    width: 374px;
+    margin-top: 46px;
+    color: #9da6a5;
+    font-size: 1.8rem;
+    line-height: 1.78;
+}
+
+.home .get-started {
+    display: flex;
+    align-items: center;
+    margin-top: 52px;
+}
+
+.home .get-started .btn-get-started {
+    width: 186px;
+    height: 68px;
+    padding: 20px 41px 21px;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    border-radius: 14px;
+    background: #1ebfc1;
+}
+
+.home .get-started .play-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0px 22px 50px 0px #0000000d;
+    cursor: pointer;
+}
+
+.home .intro-statics {
+    position: relative;
+}
+
+.home .intro-statics .intro-img {
+    width: 576px;
+    height: 631px;
+    object-fit: cover;
+}
+
+.home .intro-statics .courses-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 149px;
+    left: -40px;
+    width: 157px;
+    height: 75px;
+    border-radius: 18px;
+    background: #fefefd;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.home .intro-statics .schedules {
+    position: absolute;
+    left: -65px;
+    bottom: 46px;
+    width: 124px;
+    height: 132px;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+    padding: 16px 25px 23px;
+    text-align: center;
+}
+
+.home .intro-statics .schedules .schedules-img {
+    display: inline-block;
+}
+
+.home .intro-statics .schedules .schedules-img:nth-child(2) {
+    margin-top: 16px;
+}
+
+.home .intro-statics .schedules .schedules-img:nth-child(3) {
+    margin-top: 12px;
+}
+
+.home .intro-statics .schedules .schedules-img:nth-child(4) {
+    margin-top: 10px;
+}
+
+.home .intro-statics .schedules .schedules-img:nth-child(5) {
+    margin-top: 16px;
+}
+
+.home .schedules .info {
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.home .intro-statics .students {
+    position: absolute;
+    right: 45px;
+    bottom: 41px;
+    width: 207px;
+    height: 90px;
+    padding: 17px 35px;
+    border-radius: 24px;
+    background: #fefefd;
+    box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.home .students .active-students {
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.home .intro-statics .avatar {
+    display: flex;
+    margin-top: 8px;
+}
+
+.home .intro-statics .avatar img:first-child {
+    margin-left: 0;
+}
+
+.home .intro-statics .avatar img {
+    width: 33px;
+    height: 33px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: -7px;
+}
+
+.home .intro-statics .active-students-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33px;
+    height: 33px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: -7px;
+    background-color: #1ebfc1;
+}
+
+.home .intro-statics .active-students-number span {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Features */
+
+.features {
+    padding: 130px 0 65px;
+}
+
+.feature-content {
+    width: 1024px;
+}
+
+.features .sub-title {
+    color: #767e7e;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.features .heading {
+    margin-top: 18px;
+    width: 56.3%;
+}
+
+.features .desc {
+    margin-top: 18px;
+    width: 57.6%;
+    color: #767e7e;
+    font-size: 1.8rem;
+    line-height: normal;
+}
+
+.features .features-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.features .features-item .features-name {
+    margin-top: 26px;
+    color: #0d1111;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.features .features-item .desc {
+    color: #9da6a5;
+    font-size: 1.6rem;
+    line-height: 1.6875;
+}
+
+.features .features-item .desc:last-child {
+    width: 224px;
+}
+
+/* Courses */
+
+.courses {
+    padding: 65px 0 0 0;
+}
+
+.courses .sub-title {
+    color: #767e7e;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.courses .heading {
+    margin-top: 18px;
+}
+
+.courses .courses-list {
+    display: flex;
+    gap: 47px;
+}
+
+.courses .courses-all {
+    display: flex;
+    margin-top: 19px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.courses .courses-all .desc {
+    width: 44.8%;
+    color: #767e7e;
+    font-size: 1.8rem;
+    line-height: 1.777;
+}
+
+.courses .courses-all a {
+    color: #1ebfc1;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+
+.courses .courses-list .courses-item {
+    position: relative;
+    width: calc(33.33% - 31px);
+    flex-shrink: 0;
+    margin-top: 79px;
+}
+
+.courses .courses-list .course-img {
+    width: 100%;
+    object-fit: cover;
+    height: 393px;
+    border-radius: 8px;
+    opacity: 0.6;
+    background: #d0efed;
+}
+
+.courses .courses-list .course-info {
+    position: absolute;
+    left: 17px;
+    bottom: -124px;
+    width: 325px;
+    height: 195px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+    padding: 18px 25px 29px;
+}
+
+.courses .course-info .course-name {
+    color: #0d1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.courses .course-info .course-fee {
+    margin-top: 16px;
+    color: #767e7e;
+    font-size: 1.6rem;
+    line-height: normal;
+}
+
+.courses .course-info .course-fee strong {
+    color: #0d1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.courses .course-info .course-level {
+    margin-top: 6px;
+    color: #9da6a5;
+    font-size: 1.4rem;
+    line-height: normal;
+}
+
+.courses .course-info .course-period {
+    display: flex;
+    margin-top: 18px;
+}
+
+.courses .course-info .course-period .course-number {
+    color: #9da6a5;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: normal;
+}
+
+.courses .course-info .course-period .course-number + .course-number {
+    margin-left: 10px;
+}
+
+.courses .course-info .course-period .course-number::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #1ebfc1;
+    border-radius: 50%;
+    line-height: normal;
+}
+
+/* Count-down */
+
+.count-down {
+    /* padding: 65px 0 65px; */
+    margin-top: 389px;
+    padding-bottom: 65px;
+    width: 821px;
+    margin: 259px auto 0;
+}
+
+.count-down .count-down-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.count-down .stats-number {
+    color: #0d1111;
+    text-align: center;
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.count-down .stats-desc {
+    color: #767e7e;
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: normal;
+}
+
+/* Testimonial */
+
+.testimonial {
+    padding: 65px 0;
+}
+
+.testimonial .body {
+    position: relative;
+    height: 481px;
+}
+
+.testimonial .feedback .feedback-quote {
+    display: inline-block;
+    margin-top: 37px;
+}
+
+.testimonial .feedback .feedback-desc {
+    margin-top: 27px;
+    width: 35.8%;
+    color: #5d6564;
+    font-size: 3.2rem;
+    line-height: 1.5;
+}
+
+.testimonial .feedback .feedback-reviewer {
+    display: flex;
+    align-items: center;
+    margin-top: 33px;
+    color: #767e7e;
+    font-size: 1.6rem;
+    line-height: normal;
+}
+
+.testimonial .feedback .feedback-reviewer strong {
+    color: #070707;
+    font-weight: 500;
+}
+
+.testimonial .feedback .feedback-reviewer::before {
+    margin-right: 5px;
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 2px;
+    background: #070707;
+}
+
+.testimonial .feedback-button {
+    margin-top: 52px;
+    display: flex;
+    gap: 30px;
+}
+
+.testimonial .feedback-button .feedback-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #2ac9bf;
+    border-radius: 50%;
+}
+
+.testimonial .feedback-img .feedback-avatar {
+    position: absolute;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial .feedback-img .avatar-1 {
+    width: 235px;
+    height: 235px;
+    top: 129px;
+    right: 171px;
+}
+
+.testimonial .feedback-img .avatar-2 {
+    width: 110px;
+    height: 110px;
+    top: 19px;
+    right: 0;
+}
+
+.testimonial .feedback-img .avatar-3,
+.testimonial .feedback-img .avatar-4,
+.testimonial .feedback-img .avatar-5 {
+    width: 78px;
+    height: 78px;
+}
+
+.testimonial .feedback-img .avatar-3 {
+    right: 32px;
+    bottom: 39px;
+}
+
+.testimonial .feedback-img .avatar-4 {
+    right: 311px;
+    bottom: 0;
+}
+
+.testimonial .feedback-img .avatar-5 {
+    right: 569px;
+    bottom: 145px;
+}
+
+.testimonial .feedback-img .avatar-6 {
+    width: 92px;
+    height: 92px;
+    top: 0;
+    right: 443px;
+}
+
+/* CTA */
+
+.cta-page {
+    margin-top: 65px;
+    background: #def6f5;
+}
+
+.cta-page .body {
+    padding: 76px 154px 88px 135px;
+}
+
+.cta-page .heading.lv2 {
+    line-height: normal;
+}
+
+.cta-page .body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta-page .desc {
+    margin-top: 18px;
+    color: #767e7e;
+    font-size: 1.8rem;
+    line-height: normal;
+}
+
+.cta-page .cta-btn {
+    display: inline-block;
+    min-width: 186px;
+    height: 68px;
+    border-radius: 14px;
+    background: #2ac9bf;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 68px;
+    text-align: center;
+}
+
+/* Footer */
+
+.footer {
+    margin-top: 131px;
+}
+
+.footer .footer-column {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .footer-column .footer-heading {
+    margin-bottom: 26px;
+    color: #2e2e2e;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.footer .column .footer-link {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: #535353;
+    font-size: 1.6rem;
+    line-height: normal;
+}
+
+.footer .column li:last-child .footer-link {
+    margin-bottom: 0;
+}
+
+.footer .column .social {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.footer .column .social-icon {
+    margin-right: 9px;
+}
+
+.footer .column .social-link {
+    color: #535353;
+    font-size: 1.6rem;
+    line-height: normal;
+    margin-right: 9px;
+}
+
+.footer .footer-copyright {
+    margin: 80px auto 20px;
+    color: #b0b5b4;
+    font-size: 1.8rem;
+    line-height: normal;
+    text-align: center;
+}
